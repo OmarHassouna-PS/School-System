@@ -1,0 +1,198 @@
+/* start general */
+
+:root {
+    --Pink-color: #865DFF; 
+    --gold-color: #c2a86c;
+    --white-color: #fff;
+    --red-color: red;
+    --black-color:  #212529;
+}
+
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: var(--black-color);
+}
+
+.general-font {
+    color: var(--white-color);
+    font-size: 1.3rem;
+    line-height: 1.5;
+    word-spacing: 0.1rem;
+}
+
+.Hero-section > div {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+/* end general */
+
+/* ************************** */
+
+/* start nav */
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+.navbar-nav .nav-link {
+    color: var(--white-color);
+    box-shadow: 0px 0px 5px var(--red-color);
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-link:focus, 
+.navbar-nav .nav-link:hover {
+    color: var(--gold-color);
+    box-shadow: 0px 0px 30px var(--red-color);
+    transition: color .30s ease-in-out,background-color .30s ease-in-out,border-color .30s ease-in-out,box-shadow .30s ease-in-out;
+} 
+
+.navbar-nav .nav-link.active {
+    color: var(--gold-color);
+}
+
+/* end nav */
+
+/* ************************** */
+
+/* start hero-section */
+
+.Hero-section, .register-section, .information-section {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(images/Background-hero.jpg);
+    min-height: 100vh;
+}
+
+
+.Hero-text-section {
+    color: var(--black-color);
+}
+
+.Hero-section > div {
+    min-height: calc(100vh - 55px);
+}
+
+/* end hero-section */
+
+/* start orderings-section */
+
+/* .orderings-section {
+    
+}
+ */
+.form {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--red-color);
+    width: 50%;
+    margin-top: 150px;
+
+}
+
+.form-font {
+    color: #fff;
+    font-size: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* end orderings-section */
+
+/* start information-section */
+
+.information-section {
+    min-height: calc(100vh - 55px);
+}
+
+.table {
+    width: 70%;
+}
+
+.table, .table th, .table td  {
+    border: 1px solid;
+    color: var(--black-color);
+}
+
+/* end orderings-section */
+
+/* ************************** */
+
+/* start Line and bottom Contact section */
+
+.line {
+    height: 7px;
+    width: 60px;
+    background: var(--gold-color);
+    border-radius: 5px;
+    opacity: 1.0;
+}
+
+.line-full, hr {
+    border-top: 3px solid var(--gold-color);
+    margin: 0;
+}
+
+.btn {
+    color:var(--gold-color);
+}
+
+.Hero-button {
+    width: 8rem;
+    height: 3rem;
+    text-shadow: 0px 0px 20px;
+    
+}
+
+.Hero-button:hover {
+    background-color: var(--gold-color);
+    color: white;
+}
+
+
+.btn-outline-danger {
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--gold-color);
+    --bs-btn-hover-border-color: var(--gold-color);
+    border-color: var(--gold-color);
+    --bs-btn-active-bg: var(--red-color);
+    --bs-btn-active-border-color: var(--red-color);
+}
+
+/* End Line and bottom Contact section */
+
+/* ************************** */
+
+@media (max-width: 767px) {
+    .navbar-nav li{
+        margin-top: 8px;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+
+
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-nav li{
+       font-size: 10px;
+       font-weight: 900;
+    }
+
+}
