@@ -95,8 +95,6 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px var(--red-color);
     width: 50%;
-    margin-top: 150px;
-
 }
 
 .form-font {
@@ -116,10 +114,6 @@ body {
 
 .information-section {
     min-height: calc(100vh - 55px);
-}
-
-.table {
-    width: 70%;
 }
 
 .table, .table th, .table td  {
@@ -178,6 +172,25 @@ body {
 /* End Line and bottom Contact section */
 
 /* ************************** */
+
+/* Start Card students */
+
+.card {
+    box-shadow: 0px 0px 10px var(--red-color);
+    margin-top: 50px;
+    background-color: #0005;
+}
+
+.card-font {
+    color: #fff;
+    font-size: 15px;
+}
+
+.card-img {
+    border-radius: 10px;
+    border: 2px solid rgb(232, 232, 232);
+}
+/* End Card students */
 
 @media (max-width: 767px) {
     .navbar-nav li{
